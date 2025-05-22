@@ -791,6 +791,7 @@ def server(input, output, session):
     @output
     @render.plot
     def upload_heatmap():
+        print(input.image_upload(), input.upload_model_select())
         if input.image_upload():
             filepath = input.image_upload()[0]['datapath']
             model_name = input.upload_model_select()
