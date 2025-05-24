@@ -1,0 +1,1 @@
+python -m shiny run app_john.py
