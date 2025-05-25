@@ -31,11 +31,11 @@ import time
 # ----------------------------
 # Upload the image saving path
 # ----------------------------
-UPLOAD_SAVE_DIR = "projectdata/images/uploads"
+UPLOAD_SAVE_DIR = os.path.join("projectdata", "images", "uploads")
 
-EVALUATION_IMAGE_PATH = "/Users/homeyellow/Desktop/GSM7780153_Post-Xenium_HE_Rep1.ome.tif" # path to the big .tif image of all cells
-MODEL_DIR = "/Users/homeyellow/Desktop/cell-identification-ML/model_h5_files"
-TEST_DATA_DIR = "/Users/homeyellow/Desktop/cell-identification-ML/projectdata/images/uncentred_ternary_224_ALL"
+EVALUATION_IMAGE_PATH =  os.path.join("projectdata", "metadata_code", "GSM7780153_Post-Xenium_HE_Rep1.ome.tif") # path to the big .tif image of all cells
+MODEL_DIR = os.path.join("projectdata", "model_h5_files")
+TEST_DATA_DIR =  os.path.join("projectdata", "images", "uncentred_ternary_224_ALL") 
 
 IMG_DIM = (224, 224)
 BATCH_SIZE = 128 # will only affect batches for prediction I believe

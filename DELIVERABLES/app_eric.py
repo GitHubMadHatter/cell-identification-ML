@@ -29,11 +29,11 @@ warnings.filterwarnings("ignore")
 # ----------------------------
 # Upload the image saving path
 # ----------------------------
-UPLOAD_SAVE_DIR = "projectdata/images/uploads"
+UPLOAD_SAVE_DIR = os.path.join("projectdata", "images", "uploads")
 
 EVALUATION_IMAGE_PATH =  os.path.join("projectdata", "metadata_code", "GSM7780153_Post-Xenium_HE_Rep1.ome.tif") # path to the big .tif image of all cells
-MODEL_DIR = "model_h5_files"
-TEST_DATA_DIR = "projectdata/images/uncentred_ternary_224_ALL"
+MODEL_DIR = os.path.join("projectdata", "model_h5_files")
+TEST_DATA_DIR =  os.path.join("projectdata", "images", "uncentred_ternary_224_ALL") 
 
 IMG_DIM = (224, 224) 
 BATCH_SIZE = 64 # will only affect batches for prediction I believe
